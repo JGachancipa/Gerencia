@@ -1,0 +1,7 @@
+[
+    { "id": 123123, "nombre": "Telecomunicaciones", "creditos": "4", "semestre": 20, "calificacion": 85 },
+    { "id": 23123, "nombre": "Ingenieria de Software", "creditos": "5", "semestre": 22, "calificacion": 90 },
+    { "id": 33213, "nombre": "Calculo III", "creditos": "7", "semestre": 19, "calificacion": 78 },
+    { "id": 43213, "nombre": "Algebra Lineal", "creditos": "6", "semestre": 21, "calificacion": 88 },
+    { "id": 53123, "nombre": "Elementos de la Computacion", "creditos": "5", "semestre": 23, "calificacion": 92 }
+]
