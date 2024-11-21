@@ -1,0 +1,26 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #0f385a;
+}
+
+.logo {
+    margin-right: auto; /* Mueve la imagen más hacia la derecha */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-left: 50px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif; /* Familia de fuente elegante */
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Espaciado entre letras */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
