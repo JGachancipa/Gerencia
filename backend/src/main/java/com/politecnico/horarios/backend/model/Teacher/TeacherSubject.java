@@ -1,11 +1,15 @@
 package com.politecnico.horarios.backend.model.Teacher;
 
-import java.util.Objects;
-
+import com.politecnico.horarios.backend.model.Student.Student;
 import com.politecnico.horarios.backend.model.Subject.Subject;
 import com.politecnico.horarios.backend.model.TimeBlock.TimeBlock;
 
-import jakarta.persistence.*;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.MapsId;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "teacher_subjects")
@@ -24,27 +28,15 @@ public class TeacherSubject {
     @JoinColumn(name = "subject_id")
     private Subject subject;
 
-    private String weekday;
-
     @ManyToOne
     @JoinColumn(name = "block_id")
     private TimeBlock timeBlock;
 
-    @Column(name = "student_id")
-    private int studentId;
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private Student student;
 
-    public TeacherSubject() {
-    }
-
-    public TeacherSubject(TeacherSubjectId id, Teacher teacher, Subject subject, String weekday, TimeBlock timeBlock, int studentId) {
-        this.id = id;
-        this.teacher = teacher;
-        this.subject = subject;
-        this.weekday = weekday;
-        this.timeBlock = timeBlock;
-        this.studentId = studentId;
-    }
-
+    // Getters y Setters
     public TeacherSubjectId getId() {
         return id;
     }
@@ -69,14 +61,6 @@ public class TeacherSubject {
         this.subject = subject;
     }
 
-    public String getWeekday() {
-        return weekday;
-    }
-
-    public void setWeekday(String weekday) {
-        this.weekday = weekday;
-    }
-
     public TimeBlock getTimeBlock() {
         return timeBlock;
     }
@@ -85,38 +69,11 @@ public class TeacherSubject {
         this.timeBlock = timeBlock;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
-    @Override
-    public String toString() {
-        return "TeacherSubject{" +
-                "id=" + id +
-                ", teacher=" + teacher +
-                ", subject=" + subject +
-                ", weekday='" + weekday + '\'' +
-                ", timeBlock=" + timeBlock +
-                ", studentId=" + studentId +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (!(o instanceof TeacherSubject))
-            return false;
-        TeacherSubject that = (TeacherSubject) o;
-        return id.equals(that.id) && studentId == that.studentId;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, studentId);
+    public void setStudent(Student student) {
+        this.student = student;
     }
 }

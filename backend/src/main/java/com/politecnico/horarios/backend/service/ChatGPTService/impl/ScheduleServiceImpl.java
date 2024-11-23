@@ -41,17 +41,16 @@ public class ScheduleServiceImpl implements ScheduleService {
 
     @Override
     public ScheduleResponse getSchedule(int studentId, String preferences) {
-        Student student = studentRepository.findById(studentId)
+        final Student student = studentRepository.findById(studentId)
                 .orElseThrow(() -> new IllegalArgumentException("Estudiante no encontrado"));
-
-        List<TeacherSubject> teacherSubjects = teacherSubjectRepository.findByStudentId(studentId);
+        
+        List<TeacherSubject> teacherSubjects = teacherSubjectRepository.findAll();
         if (teacherSubjects.isEmpty()) {
             throw new IllegalArgumentException("No se encontraron materias y profesores para el estudiante.");
         }
 
         String prompt = buildPrompt(student, teacherSubjects, preferences);
         
-        // Imprimir el prompt antes de enviarlo a la API de ChatGPT
         System.out.println("Prompt generado: \n" + prompt);
 
         ScheduleRequest req = new ScheduleRequest(model, prompt);
@@ -71,14 +70,15 @@ public class ScheduleServiceImpl implements ScheduleService {
                 .collect(Collectors.joining(", "));
 
         return String.format("""
-                Necesito un horario para el estudiante %s basado en las siguientes especificaciones:
+            Necesito un horario para el estudiante %s basado en las siguientes especificaciones:
 
-                1. **Materias y Profesores**: %s
-                2. **Preferencias Adicionales**: %s
+            1. **Materias y Profesores**: %s
+            2. **Preferencias Adicionales**: %s
 
-                Genera el horario en un formato JSON organizado por días, donde cada día contenga un array de bloques horarios disponibles.
-                """, student.getName(), subjectDetails,
-                preferences != null ? preferences : "Ninguna");
+            Genera el horario en un formato JSON organizado por días, donde cada día contenga un array de bloques horarios disponibles.
+            """, student.getName(), subjectDetails,
+            preferences != null ? preferences : "Ninguna");
+
     }
 
     private ScheduleResponse parseScheduleResponse(String rawText) {
