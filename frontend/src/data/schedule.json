@@ -1,0 +1,150 @@
+[
+    {
+      "nrc": 123456,
+      "materia": "Estructuras de Datos",
+      "profesor": "Carlos Pérez",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 234567,
+      "materia": "Bases de Datos",
+      "profesor": "Ana Gómez",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 345678,
+      "materia": "Redes de Computadores",
+      "profesor": "Luis Martínez",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 456789,
+      "materia": "Sistemas Operativos",
+      "profesor": "María López",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 567890,
+      "materia": "Ingeniería de Software",
+      "profesor": "Pedro Sánchez",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 678901,
+      "materia": "Algoritmos Avanzados",
+      "profesor": "Carolina Jiménez",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 789012,
+      "materia": "Desarrollo Web",
+      "profesor": "Fernando Castillo",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 890123,
+      "materia": "Programación Orientada a Objetos",
+      "profesor": "Laura Medina",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 901234,
+      "materia": "Inteligencia Artificial",
+      "profesor": "Santiago Vargas",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 123789,
+      "materia": "Arquitectura de Computadores",
+      "profesor": "Luisa Mora",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 124567,
+      "materia": "Seguridad Informática",
+      "profesor": "Andrés Gómez",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 132456,
+      "materia": "Cálculo Diferencial",
+      "profesor": "Julieta Romero",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 145678,
+      "materia": "Matemáticas Discretas",
+      "profesor": "Juan Castaño",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 156789,
+      "materia": "Teoría de la Computación",
+      "profesor": "Valeria Peña",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 167890,
+      "materia": "Ingeniería de Requisitos",
+      "profesor": "David Ramírez",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 178901,
+      "materia": "Desarrollo de Aplicaciones Móviles",
+      "profesor": "Lucía Quintero",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 189012,
+      "materia": "Machine Learning",
+      "profesor": "Camilo Salazar",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 190123,
+      "materia": "Programación Funcional",
+      "profesor": "Paola Ocampo",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 212345,
+      "materia": "Ciencia de Datos",
+      "profesor": "Sergio Correa",
+      "horario": "6:40 a 9:40",
+      "creditos": 3
+    },
+    {
+      "nrc": 223456,
+      "materia": "Diseño de Interfaces",
+      "profesor": "Alejandra Restrepo",
+      "horario": "6:40 a 8:10",
+      "creditos": 3
+    },
+    {
+      "nrc": 234567,
+      "materia": "Gestión de Proyectos",
+      "profesor": "Federico Arango",
+      "horario": "8:20 a 9:40",
+      "creditos": 3
+    }
+  ]
+  
