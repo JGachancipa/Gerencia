@@ -38,6 +38,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "resolveJsonModule": true,  // Permite importar archivos JSON
     /* Completeness */
     "skipLibCheck": true
   },
